@@ -12,15 +12,12 @@ import io.opentelemetry.sdk.trace.samplers.SamplingResult;
 
 import java.util.List;
 
-/**
- * Configurable sampler exactly as documented - validates the configuration example.
- */
+
 @AutoService(ConfigurableSamplerProvider.class)
 public class ConfigurableDemoSampler implements ConfigurableSamplerProvider {
 
     @Override
     public Sampler createSampler(ConfigProperties config) {
-        // From docs: Read configuration with defaults
         double ratio = config.getDouble("otel.instrumentation.demosampler.ratio", 1.0);
         boolean debug = config.getBoolean("otel.instrumentation.demosampler.debug", false);
         int threshold = config.getInt("otel.instrumentation.demosampler.threshold", 100);
