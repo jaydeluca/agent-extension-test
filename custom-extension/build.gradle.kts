@@ -37,6 +37,7 @@ dependencies {
 
     // Required for custom instrumentation
     compileOnly("io.opentelemetry.javaagent:opentelemetry-javaagent-extension-api:2.21.0-alpha")
+    compileOnly("io.opentelemetry.instrumentation:opentelemetry-instrumentation-api-incubator:2.21.0-alpha")
     compileOnly("net.bytebuddy:byte-buddy:1.15.10")
 
     //Provides @AutoService annotation that makes registration of our SPI implementations much easier
