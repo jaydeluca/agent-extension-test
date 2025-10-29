@@ -33,7 +33,3 @@ Use the provided test scripts to experiment with OpenTelemetry Java agent instru
 ./test-instrumentation.sh
 ./test-configuration.sh
 ```
-
-## License
-
-This is a test project for educational purposes.
