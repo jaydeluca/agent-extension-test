@@ -24,7 +24,6 @@ and custom extensions. It includes a basic web server with sample endpoints and 
 The server starts on port 8080 with the following endpoints:
 - `http://localhost:8080/hello` - Returns a simple greeting
 - `http://localhost:8080/greet?name=YourName` - Returns a personalized greeting
-```
 
 ## Testing with OpenTelemetry Agent
 
